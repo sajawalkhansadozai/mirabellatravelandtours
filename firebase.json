@@ -1,0 +1,1 @@
+{"firestore":{"database":"(default)","location":"asia-south1","rules":"firestore.rules","indexes":"firestore.indexes.json"},"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"mirabellatravelandtours-bc7f0","configurations":{"web":"1:554497290520:web:e1b0ebd9825f7b5c5e2e6d"}}}}}}
