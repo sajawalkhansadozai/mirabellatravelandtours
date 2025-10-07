@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "a27625eab961af28a78b49fc75f17edc",
-"assets/AssetManifest.bin.json": "6051d5019a16cadd47faff10dd17449e",
-"assets/AssetManifest.json": "b553cc22b811fe827765b450aee2fea4",
+const RESOURCES = {"assets/AssetManifest.bin": "fe7a92c57219ee82138118b0beab2d36",
+"assets/AssetManifest.bin.json": "32ceef4e1e20cc1b46db88f8d0ae9f7d",
+"assets/AssetManifest.json": "7e64151fb1d8a6654539d091c0fffe9b",
 "assets/assets/destinations/attabad.jpg": "61b2887edab8948503ef62162405d3f9",
 "assets/assets/destinations/deosai.jpg": "dcbf629c7385a5e96577063553f8a847",
 "assets/assets/destinations/fairy_meadows.jpg": "101085b99447511e3b460ee64ad9d5f0",
@@ -18,6 +18,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "a27625eab961af28a78b49fc75f17edc
 "assets/assets/destinations/shogran.jpg": "3f6b16048fbe042e96df391bf4fd4b4f",
 "assets/assets/destinations/skardu.jpg": "c9ea48f6c29e1c74176342e66e3d9508",
 "assets/assets/destinations/swat.jpg": "744a4b47bcb60234d8e8751d583458f4",
+"assets/assets/ecab1.jpg": "966cd575fe896d42bc7c0f99b84fb40b",
+"assets/assets/ecab2.jpg": "1d7f62c5cff00782050ff87f3a040d82",
+"assets/assets/ecab3.jpg": "023609c80175fa4b0bb1747fe1d144af",
 "assets/assets/gallery/attabad.jpg": "356aef731f25af1109d9c12a3a162e32",
 "assets/assets/gallery/chitral.jpg": "e6994380e2477c4f8066a96b42007961",
 "assets/assets/gallery/deosai.jpeg": "e081fd2a279f50b65c777c17de9de810",
@@ -38,7 +41,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "a27625eab961af28a78b49fc75f17edc
 "assets/assets/team/mustafa.jpeg": "386e9a973ea1d246d851a854cdb5bf1b",
 "assets/assets/team/rana.jpeg": "ba096cce70f7e67c05d263e8f207b900",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "dbe20ced5b122c5f7d2feda700ed6ff6",
+"assets/fonts/MaterialIcons-Regular.otf": "605eca3271c7113060b5405669e377da",
 "assets/NOTICES": "6fd3576a5ddee4499c88bf1e98fa0986",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "33b7d9392238c04c131b6ce224e13711",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
@@ -56,16 +59,17 @@ const RESOURCES = {"assets/AssetManifest.bin": "a27625eab961af28a78b49fc75f17edc
 "canvaskit/skwasm_heavy.wasm": "8034ad26ba2485dab2fd49bdd786837b",
 "favicon.png": "3f1b223a42a3d382977960127810c4ed",
 "flutter.js": "888483df48293866f9f41d3d9274a779",
-"flutter_bootstrap.js": "f2eb16362fd13715fc877ec8fe4ca645",
+"flutter_bootstrap.js": "5832df333edccdf292edc0e704920422",
 "icons/Icon-192.png": "3f1b223a42a3d382977960127810c4ed",
 "icons/Icon-512.png": "3f1b223a42a3d382977960127810c4ed",
 "icons/Icon-maskable-192.png": "3f1b223a42a3d382977960127810c4ed",
 "icons/Icon-maskable-512.png": "3f1b223a42a3d382977960127810c4ed",
 "index.html": "9108bbe153d42dc2b1edd1372be25a7b",
 "/": "9108bbe153d42dc2b1edd1372be25a7b",
-"main.dart.js": "45b80e756fbbb7f36582e98026c4b9d2",
+"main.dart.js": "4ddf8f8f28edc630d11e9091ea856996",
 "manifest.json": "4563bec1681daa05c7da33cc92439dbb",
-"version.json": "b6c14de5f49783f3b56e9b7c28b5f0d7"};
+"version.json": "b6c14de5f49783f3b56e9b7c28b5f0d7",
+"_redirects.txt": "c62c109df475b368db5e075d5e2f0052"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",

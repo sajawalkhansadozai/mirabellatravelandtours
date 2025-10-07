@@ -16,6 +16,9 @@ import 'pages/contact.dart';
 // 👉 Admin (new)
 import 'pages/admin.dart';
 
+// ✅ NEW: E-Cab Division 1 page
+import 'pages/e_cab_division1.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
@@ -60,6 +63,9 @@ class MirabellaTravelApp extends StatelessWidget {
         // NEW: admin routes
         '/admin-login': (_) => const AdminLoginPage(),
         '/admin': (_) => const AdminPanelPage(),
+
+        // ✅ NEW: E-Cab Division 1 route
+        '/ecab': (_) => const AppShell(child: ECabDivision1Page()),
       },
     );
   }
@@ -88,6 +94,14 @@ class _AppShellState extends State<AppShell> with TickerProviderStateMixin {
     _NavItem(label: 'Home', route: '/home', icon: Icons.home_outlined),
     _NavItem(label: 'About', route: '/about', icon: Icons.info_outline),
     _NavItem(label: 'Services', route: '/services', icon: Icons.travel_explore),
+
+    // ✅ NEW: E-Cab Division 1 item (appears in navbar + mobile menu)
+    _NavItem(
+      label: 'E-Cab Division 1',
+      route: '/ecab',
+      icon: Icons.electric_car,
+    ),
+
     _NavItem(
       label: 'Destinations',
       route: '/destinations',
@@ -303,7 +317,6 @@ class _AppShellState extends State<AppShell> with TickerProviderStateMixin {
     ];
   }
 
-  // Mobile/Tablet popup menu (only supported parameters)
   // Mobile/Tablet popup menu (no header item)
   List<Widget> _buildMobileActionsDropdown(BuildContext context) {
     return [
@@ -344,8 +357,6 @@ class _AppShellState extends State<AppShell> with TickerProviderStateMixin {
             setState(() => _isDropdownOpen = false);
             _dropdownAnimationController.reverse();
           },
-
-          // ✅ HEADER REMOVED — only real nav items now
           itemBuilder: (ctx) => _items.asMap().entries.map((entry) {
             final index = entry.key;
             final item = entry.value;
@@ -423,7 +434,6 @@ class _AppShellState extends State<AppShell> with TickerProviderStateMixin {
               ),
             );
           }).toList(),
-
           onSelected: (item) {
             setState(() => _isDropdownOpen = false);
             _dropdownAnimationController.reverse();
