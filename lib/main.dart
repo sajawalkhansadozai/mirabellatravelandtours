@@ -96,11 +96,7 @@ class _AppShellState extends State<AppShell> with TickerProviderStateMixin {
     _NavItem(label: 'Services', route: '/services', icon: Icons.travel_explore),
 
     // ✅ NEW: E-Cab Division 1 item (appears in navbar + mobile menu)
-    _NavItem(
-      label: 'E-Cab Division 1',
-      route: '/ecab',
-      icon: Icons.electric_car,
-    ),
+    _NavItem(label: 'E-Cab', route: '/ecab', icon: Icons.electric_car),
 
     _NavItem(
       label: 'Destinations',
